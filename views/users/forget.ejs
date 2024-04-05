@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/image/login.png">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/forget" method="post" autocomplete="off">
+                    <div class="logo"><img class="image" src="/css/ShiftSync.svg" alt="ShiftSync"></div>
+                    <h2>Forgot your password</h2>
+
+                    <div class="message-box">
+                        <% if(typeof message !== 'undefined') { %>
+                            <div class="message-card">
+                                <h4><%= message %></h4>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" required>
+                        <label for="">Email </label>
+                    </div>
+                    <input class="button" type="Submit" value="Request Reset Link">
+                    
+                    <div class="register">
+                        <a href="/login">Back to Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
